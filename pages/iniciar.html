@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d503c2dcb5.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Iniciar sesión</title>
+</head>
+
+<body>
+
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-success">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logo2.jpg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/ventasmayor.html">Ventas al por mayor</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav iconos">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/listacompras.html"><i class="fa fa-heart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/iniciar.html"><i class="fa fa-user"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/carrito.html"><i
+                                    class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container text-center">
+        <h6>INICAR SESIÓN</h6>
+
+        <form action="form.php" method="post" class="inicio">
+            <label class="usuario" for="">Usuario</label>
+            <input type="text" name="usuario" id="usuario">
+
+            <label class="contraseña" for="">Contraseña</label>
+            <input type="password" name="Contraseña" id="Contraseña">
+
+            <input class="btn" type="submit" value="Ingresar">
+
+            <a class="form" href="#">Olvidé mi usuario o contraseña</a>
+        </form>
+
+        <section class="iniciar_sesion">
+            <span>CREAR UNA CUENTA</span>
+            <p>Si no ha creado una cuenta en nuestra tienda antes, se le pedirá que proporcione sus datos y dirección de
+                entrega.</p>
+
+            <form action="form.php" method="post" class="inicio">
+                <input class="btn" type="submit" value="Registrarse">
+            </form>
+        </section>
+
+
+    </section>
+
+
+
+    <hr>
+
+    <footer class="footer">
+        <div class="footer_info">
+            <p>Seguí nuestras redes sociales</p>
+        </div>
+
+        <div class="redes">
+            <nav class="redes_sociales">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://crear.wa.link/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </nav>
+        </div>
+
+        <nav class="pie">
+            <p>2023 - Desarrollado por Eugenia Casalino</p>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
