@@ -1,0 +1,17 @@
+//globals
+@import "./globals/reset";
+
+//utilities
+@import "./utilities/variables";
+@import "./utilities/colors";
+@import "./utilities/mixins";
+@import "./utilities/animaciones";
+
+//layaouts
+@import "./layouts/navbar";
+@import "./layouts/footer";
+
+//views
+@import "./views/home";
+@import "./views/productos";
+@import "./views/pages";

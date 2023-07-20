@@ -1,0 +1,96 @@
+.footer {
+    padding: 1rem;
+    text-align: $text-center;
+
+    .footer_info p {
+        color: $footer-color;
+        font-family: $font-primary;
+        text-transform: $text-size;
+        font-weight: 900;
+    }
+
+    a {
+        color: $redes-color;
+        font-size: $fontsize-secondary;
+        margin: 10px;
+
+        &:hover {
+            color: $footer-hover-color;
+        }
+    }
+
+    .pie {
+        color: $color-general;
+        font-size: $font-general;
+        font-weight: 700;
+        font-family: $font-primary;
+        text-transform: $text-size;
+        letter-spacing: $letter2-spacing;
+        transform: translate(0, 1em);
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 0.5rem;
+    }
+
+    .footer_info p {
+        font-size: 12px;
+    }
+
+    .footer a {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .pie {
+        font-size: 8px;
+        padding-top: 2em;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .footer {
+        padding: 0.75rem;
+    }
+
+    .footer_info p {
+        font-size: 14px;
+    }
+
+    .footer a {
+        font-size: 22px;
+        margin: 8px;
+    }
+
+    .pie {
+        font-size: 9px;
+        padding-top: 3em;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .footer {
+        padding: 1rem;
+    }
+
+    .footer_info p {
+        font-size: 16px;
+    }
+
+    .footer a {
+        font-size: $fontsize-secondary;
+        margin: 10px;
+    }
+
+    .pie {
+        font-size: $font-general;
+        padding-top: 4em;
+    }
+}

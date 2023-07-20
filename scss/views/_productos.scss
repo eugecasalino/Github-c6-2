@@ -1,0 +1,134 @@
+.filter {
+    background-color: $filter-bg-color;
+    color: $filter-text-color;
+    transform: translate(0em, -4em);
+    @include flex-dos;
+
+    .form-select {
+        width: 10%;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1em;
+    row-gap: 2em;
+    align-items: stretch;
+    animation: fade-in 1s ease-in-out forwards;
+
+    .grid-item {
+        border: 1px solid $grid-item-border-color;
+        border-radius: 1rem;
+        transform: translate(0, 2%);
+        text-align: $text-center;
+
+        p {
+            color: $color-general;
+            font-weight: $bold-weight;
+            font-size: $fontsize-primary;
+            padding: 1em 0 0;
+            margin: 0;
+        }
+
+        img {
+            width: 60%;
+        }
+    }
+}
+
+.btn {
+    @include button;
+
+    &:hover {
+        background-color: $button-hover-bg-color;
+        font-weight: $bolder-weight;
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+    .filter {
+        margin-top: 5em;
+        padding: 0.5em;
+        background-color: transparent;
+        color: $secondary-color;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.5em;
+        row-gap: 1em;
+    }
+
+    .grid-container .grid-item {
+        padding: 1em 2em 0;
+        margin: 0.5em 1em;
+    }
+
+    .grid-container .grid-item img {
+        width: 80%;
+    }
+
+    .btn {
+        margin: 1em;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .filter {
+        margin-top: 7em;
+        padding: 0.75em;
+        background-color: transparent;
+        color: $secondary-color;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 0.75em;
+        row-gap: 1.5em;
+    }
+
+    .grid-container .grid-item {
+        padding: 1.5em 2.5em 0;
+        margin: 0.75em 1.5em;
+    }
+
+    .grid-container .grid-item img {
+        width: 70%;
+    }
+
+    .btn {
+        margin: 1.5em;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .filter {
+        margin-top: 10em;
+        padding: 1em;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1em;
+        row-gap: 2em;
+    }
+
+    .grid-container .grid-item {
+        padding: 2em 3em 0;
+        margin: 1em 2em;
+    }
+
+    .grid-container .grid-item img {
+        width: 60%;
+    }
+
+    .btn {
+        margin: 2em;
+    }
+}
