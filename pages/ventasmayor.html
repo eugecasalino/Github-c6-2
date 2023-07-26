@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Venta al por mayor</title>
+    <title>Venta al por mayor | Tienda online de Yerba Mate</title>
 </head>
 
 <body>
@@ -57,18 +57,27 @@
         </nav>
     </header>
 
-    <h6 class="pages_titulo">SOLICITUD LISTA DE PRECIOS MAYORISTA</h6>
+    <h6 class="pages_titulo">VENTA POR MAYOR</h6>
 
-    <section class="pages">
-        <input placeholder="Nombre y Apellido" type="text">
-        <input placeholder="Provincia" type="text">
-        <input placeholder="Localidad" type="text">
-        <input placeholder="Whatsapp" type="text">
-        <input placeholder="Correo Electrónico" type="text">
-        <input placeholder="CUIT / CUIL" type="text">
-        <textarea placeholder="Productos de interés y marcas" name="Productos" id="" cols="30" rows="5"></textarea>
-        <button class="btn">Enviar</button>
+    <section class="ventas container">
+        <p>Si estás interesado en comprar al por mayor, por favor escribinos a <a
+                href="mailto:">info@yerbateros.com.ar</a> o completá este formulario y te contactamos a la brevedad.</p>
     </section>
+
+
+    <form action="" class="contacto__form container">
+        <label for="">Nombre</label>
+        <input class="form__contacto__input" placeholder="Introduzca su nombre" type="text" required>
+        <label for="">E-mail</label>
+        <input class="form__contacto__input" placeholder="Escriba su correo electrónico" type="email" required>
+        <label for="">Teléfono</label>
+        <input class="form__contacto__input" placeholder="Ej. (11) 1111-11111" type="tel" required>
+        <label for="">Mensaje</label>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje aqui" required></textarea><br>
+
+        <input class="contacto__form__buttom" type="submit" value="Enviar">
+    </form>
+
 
     <hr>
 

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -580,25 +579,12 @@ h5 {
     margin: 2em;
   }
 }
+/**CARRITO-LISTADECOMPRAS-INICIAR**/
 .pages_titulo {
   font-size: 25px;
   color: rgb(39, 42, 218);
   padding-top: 1em;
   transform: translate(32em, 0.5em);
-}
-
-input {
-  background-color: white;
-  color: #37755e;
-  transition: all 1.3s;
-  transform: scale(1);
-  padding: 0.1em;
-  margin: 1em;
-}
-input:focus {
-  background-color: white;
-  transition: all 1.3s;
-  transform: scale(1.1);
 }
 
 .pages {
@@ -664,6 +650,87 @@ input:focus {
   text-align: center;
 }
 
+/**FIN CARRITO-LISTADECOMPRAS-INICIAR**/
+/**CONTACTO**/
+.contacto {
+  font-size: 18px;
+  margin-top: 2.5em;
+}
+
+.contacto__section ul {
+  list-style-type: none;
+  padding: 0;
+}
+.contacto__section ul i {
+  color: rgb(57, 59, 187);
+  font-size: 25px;
+  margin: 10px;
+}
+.contacto__section ul i:hover {
+  color: rgb(136, 111, 168);
+}
+.contacto__section ul a {
+  text-decoration: none;
+  color: #207c91;
+  padding: 0;
+}
+.contacto__section ul li {
+  margin: 1em 8em 1em 4em;
+}
+.contacto__section ul li i {
+  padding-right: 0.2rem;
+}
+
+.contacto__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 4em;
+}
+.contacto__form input {
+  border: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.contacto__form input:hover {
+  border: 1px solid black;
+  transition: all 0.7s ease;
+}
+.contacto__form textarea {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-top: 1em;
+}
+.contacto__form textarea:hover {
+  border: 1px solid black;
+  transition: all 0.6s ease;
+}
+.contacto__form .contacto__form__buttom {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  width: 20%;
+}
+
+/**FIN CONTACTO**/
+/**VENTASXMAYOR**/
+.ventas p {
+  color: black;
+  font-size: 18px;
+  margin-top: 2em;
+  padding-left: 1em;
+  text-align: center;
+}
+
+/**FIN VENTASXMAYOR**/
 /* Media Queries */
 @media screen and (max-width: 600px) {
   .pages_titulo {
@@ -681,6 +748,19 @@ input:focus {
     font-size: 11px;
     margin: 0.3em;
   }
+  .contacto__form {
+    width: 50%;
+  }
+  .contacto__form__buttom {
+    font-size: 11px;
+    margin: 0.3em;
+  }
+  .ventas p {
+    color: black;
+    font-size: 13px;
+    margin-top: 2em;
+    padding-left: 1em;
+  }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .pages_titulo {
@@ -697,6 +777,19 @@ input:focus {
   .btn {
     font-size: 12px;
     margin: 0.5em;
+  }
+  .contacto__form {
+    width: 50%;
+  }
+  .contacto__form__buttom {
+    font-size: 11px;
+    margin: 1em;
+  }
+  .ventas p {
+    color: black;
+    font-size: "Poppins", sans-serif;
+    margin-top: 2em;
+    padding-left: 1em;
   }
 }
 

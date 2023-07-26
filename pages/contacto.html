@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Contacto</title>
+    <title>Contacto | Tienda online de Yerba Mate</title>
 </head>
 
 <body>
@@ -57,19 +57,50 @@
     </header>
 
 
-<h6 class="pages_titulo">ATENCIÓN AL CLIENTE</h6>
+    <h6 class="pages_titulo">ATENCIÓN AL CLIENTE</h6>
 
-    <section class="pages">
-        <strong>E-mail:</strong>
-        <a href="#">info@yerbateros.com</a>
-
-        <strong>Número de teléfono:</strong>
-        <a href="#">+54912345678</a>
-
-        <p>Comentarios</p>
-        <textarea name="" id="" cols="25" rows="10"></textarea>
-        <button class="btn">Enviar</button>
+    <section class="contacto container text-center">
+        <div class="contacto__section">
+            <ul>
+                <li>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <a href="https://crear.wa.link/">+54 9 12345678</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="#">info@yerbateros.com.ar</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="https://goo.gl/maps/LAKzDeZv5jXqBs3b7">Calle La Merced, Ensenada, Bs As.</a>
+                </li>
+            </ul>
+        </div>
     </section>
+
+    <form action="" class="contacto__form container">
+        <label for="">Nombre y Apellido*</label>
+        <input class="form__contacto__input" placeholder="Introduzca su nombre y apellido" type="text" required>
+        <label for="">E-mail*</label>
+        <input class="form__contacto__input" placeholder="Escriba su correo electrónico" type="email" required>
+        <label for="">Teléfono</label>
+        <input class="form__contacto__input" placeholder="Ej. (11) 1111-11111" type="tel" required>
+        <label for="">Área</label>
+        <input class="form__contacto__input" placeholder="Selecciona su área" type="text">
+        <label for="">Ciudad</label>
+        <input class="form__contacto__input" placeholder="Ingresa su ciudad" type="text">
+        <label for="">Provincia</label>
+        <input class="form__contacto__input" placeholder="Ingresa su provincia" type="text">
+        <label for="">País</label>
+        <input class="form__contacto__input" placeholder="Ingresa su país" type="text">
+        <label for="">Comentarios</label>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje aqui" required></textarea><br>
+
+        <p>*Por favor, complete los campos requeridos.</p>
+        <input class="contacto__form__buttom" type="submit" value="Enviar">
+    </form>
+
+
 
     <hr>
 
