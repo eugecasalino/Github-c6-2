@@ -1,27 +1,40 @@
 .logo {
-    border-radius: $border-radius;
+    border-radius: 50%;
     width: 200px;
     height: 200px;
-    transform: translate(0em, 0em);
+    margin-top: 5em;
+    margin-left: 2em;
 }
 
 .navbar {
+    display: flex;
+    align-items: center;
     height: 100px;
+}
+
+.nav-item {
+    margin-left: 15px;
 }
 
 .nav-link {
     color: $color-dos;
-    letter-spacing: $letter2-spacing;
-    padding: 0 10px;
-    margin: 10px;
+    font-size: $font-medium;
+    text-decoration: none;
+    padding: 10px;
 
     &:hover {
         color: $green-color;
     }
 }
 
-/* MEDIA QUERIES */
+.nav{
+    color: $color-dos;
+    font-size: $font-medium;
+    text-decoration: none;
+    padding: 2em;
+}
 
+/* MEDIA QUERIES */
 @media (max-width: 600px) {
     .logo {
         width: 80px;
@@ -34,39 +47,74 @@
         height: 80px;
     }
 
+    .navbar-nav .nav {
+        display: inline-block;
+    }
+
+    .navbar-collapse .navbar-nav {
+        @include flex-tres;
+        background-color: $btn-color;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        left: 0;
+        z-index: 99;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
     .nav-link {
-        font-size: 14px;
-        font-weight: $bolder-weight;
-        margin: 5px;
-        color: $h6-color;
-        text-align: end;
+        font-size: $font-small;
+        padding: 8px;
     }
 }
 
 
 @media (min-width: 601px) and (max-width: 1024px) {
     .logo {
-        width: 100px;
-        height: 100px;
-        margin-top: -0.8em;
-        margin-left: 1em;
+        width: 120px;
+        height: 120px;
+        margin-top: -0.5em;
+        margin-left: -0.5em;
     }
 
     .navbar {
-        height: 90px;
+        height: 80px;
+    }
+
+    .navbar-nav {
+        justify-content: center;
+        ;
+    }
+
+    .nav-item {
+        margin-left: 10px;
     }
 
     .nav-link {
         font-size: $font-16;
-        margin: 8px;
-        color: $color-dos;
-        text-align: end;
+        padding: 8px;
+    }
+
+    .navbar-collapse .navbar-nav{
+        @include flex-tres;
+        background-color: $btn-color;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        left: 0;
+        z-index: 99;
     }
 }
 
 
 @media (min-width: 1025px) {
+
+    /* Ajustar estilos para pantallas grandes */
     .logo {
+        border-radius: 50%;
         width: 200px;
         height: 200px;
         margin-top: 5em;
@@ -77,8 +125,12 @@
         height: 100px;
     }
 
+    .navbar-nav {
+        justify-content: flex-end;
+    }
+
     .nav-link {
-        font-size: $font-medium;
-        margin: 10px;
+        font-size: 20px;
+        padding: 15px;
     }
 }
