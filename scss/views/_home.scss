@@ -136,8 +136,7 @@ h5 {
 
 @media (max-width: 600px) {
     .texto_principal {
-        font-size: $font-small;
-        padding: 0.2em 1em 0.2em;
+        display: none;
     }
 
     h1 {
@@ -204,8 +203,7 @@ h5 {
 
 @media (min-width: 601px) and (max-width: 1024px) {
     .texto_principal {
-        font-size: $font-16;
-        padding: 1.5em 1.5em 0.3em;
+        display: none;
     }
 
     h1 {
