@@ -60,6 +60,14 @@
   .navbar-nav .nav {
     display: inline-block;
   }
+  .nav-item {
+    margin-bottom: 10px;
+  }
+  .nav-link {
+    font-size: 13px;
+    padding: 8px;
+    color: #207c91;
+  }
   .navbar-collapse .navbar-nav {
     display: flex;
     flex-direction: column;
@@ -70,14 +78,6 @@
     right: 0;
     left: 0;
     z-index: 99;
-  }
-  .nav-item {
-    margin-bottom: 10px;
-  }
-  .nav-link {
-    font-size: 13px;
-    padding: 8px;
-    color: #207c91;
   }
 }
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -90,18 +90,16 @@
   .navbar {
     height: 80px;
   }
-  .navbar-collapse {
-    background-color: green;
-  }
-  .navbar-nav {
-    justify-content: center;
+  .navbar-nav .nav {
+    display: inline-block;
   }
   .nav-item {
-    margin-left: 10px;
+    margin-bottom: 10px;
   }
   .nav-link {
     font-size: 16px;
     padding: 8px;
+    color: #207c91;
   }
   .navbar-collapse .navbar-nav {
     display: flex;

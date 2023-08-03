@@ -22,12 +22,6 @@
     }
 }
 
-// .nav{
-//     color: $redes-color;
-//     font-size: $font-medium;
-//     text-decoration: none;
-//     padding: 2em;
-// }
 
 
 /* MEDIA QUERIES */
@@ -47,16 +41,6 @@
         display: inline-block;
     }
 
-    .navbar-collapse .navbar-nav {
-        @include flex-tres;
-        background-color: $btn-color;
-        position: absolute;
-        top: 80px;
-        right: 0;
-        left: 0;
-        z-index: 99;
-    }
-
     .nav-item {
         margin-bottom: 10px;
     }
@@ -65,6 +49,16 @@
         font-size: $font-small;
         padding: 8px;
         color: $span-color;
+    }
+
+    .navbar-collapse .navbar-nav {
+        @include flex-tres;
+        background-color: $btn-color;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        left: 0;
+        z-index: 99;
     }
 }
 
@@ -81,22 +75,18 @@
         height: 80px;
     }
 
-    .navbar-collapse {
-        background-color: $button-color;
-    }
-
-    .navbar-nav {
-        justify-content: center;
-        ;
+    .navbar-nav .nav {
+        display: inline-block;
     }
 
     .nav-item {
-        margin-left: 10px;
+        margin-bottom: 10px;
     }
 
     .nav-link {
         font-size: $font-16;
         padding: 8px;
+        color: $span-color;
     }
 
     .navbar-collapse .navbar-nav {
